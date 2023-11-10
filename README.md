@@ -1,8 +1,8 @@
-# PunGrumpy's curated list of the photos
+# ARLX Photo Album | Journal
 
-A curated list of the photos I take, built with Astro and Tailwind CSS
+Built with Astro and Tailwind CSS
 
-https://pun-grumpy-takes.vercel.app/
+https://arlxxjamss.web.app/
 
 ## Stack
 
@@ -16,7 +16,7 @@ https://pun-grumpy-takes.vercel.app/
 
 ```bash
 # Clone the repository
-git clone https://github.com/PunGrumpy/PunGrumpy-Takes.git
+git clone https://github.com/Scorpyyy/Photo-albummm.git
 ```
 
 ### Local Development
@@ -29,27 +29,7 @@ yarn install
 yarn dev
 ```
 
-### Docker
-
-#### Docker Build & Run
-
-```bash
-# Build the image
-docker build -f Dockerfile.dev -t pungrumpy-takes .
-
-# Run the container
-docker run -it -p 3000:3000 pungrumpy-takes:latest
-
-```
-
-#### Docker Compose
-
-```bash
-# Docker Compose
-docker-compose -f docker-compose-dev.yml up
-```
-
-## Project Structure
+## Project RMP
 
 Inside of your Astro project, you'll see the following folders and files:
 
@@ -67,9 +47,6 @@ PROJECT_ROOT
 └── .astro              # Astro config file
 ```
 
-## Tracking the project progress
-
-![Alt](https://repobeats.axiom.co/api/embed/146c8a4de244698a29dfb39a509314ef7d55c744.svg 'Repobeats analytics image')
 
 ## License
 

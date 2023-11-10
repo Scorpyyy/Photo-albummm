@@ -7,7 +7,7 @@ import addClasses from 'rehype-add-classes'
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://pun-grumpy-takes.vercel.app/',
+  site: 'https://github.com/Scorpyyy/Photo-albummm',
   integrations: [sitemap(), react(), image(), tailwind()],
   markdown: {
     extendDefaultPlugins: true,
