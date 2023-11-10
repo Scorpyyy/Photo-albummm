@@ -1,0 +1,77 @@
+---
+import BaseHead from '../components/BaseHead.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+import { SITE_TITLE, SITE_DESCRIPTION, HOMEPAGE_URL } from '../config'
+import Body from '../components/Body.astro'
+import Content from '../components/Content.astro'
+import { IoArrowForward } from 'react-icons/io5/index.js'
+import Masterhead from '../components/Masthead.astro'
+import { Image } from '@astrojs/image/components'
+import CreatedWithSection from '../components/CreatedWithSection.astro'
+
+const posts = (await Astro.glob('./posts/*.md')).sort(
+  (a: any, b: any) =>
+    new Date(b.frontmatter.createdAt).valueOf() -
+    new Date(a.frontmatter.createdAt).valueOf()
+)
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <Body>
+    <Header title={SITE_TITLE} />
+    <main class="pt-[56px]">
+      <Masterhead />
+      <h1 class="font-mplus text-center">What I take</h1>
+      <Content>
+        <section>
+          <p class="mb-8 indent-4">
+            My hobby as a computer science student is photography, I shoot with
+            my Cannon EOS RP lens EF 50mm f/1.8 STM. I also use my iPhone 11 and
+            Canon EOS Kiss lens EF 50 mm f/1.8 II (Film camera). As a result,
+            I've been working hard to improve my photography skills. Every time
+            I take a new photograph, I try to learn something news. And I take a
+            new photo every day. So, here is a photo gallery of my photos.
+            Finally, I'd like to share my photography portfolio.
+            <a
+              href={HOMEPAGE_URL}
+              class="inline-flex items-center gap-1 indent-1 text-orange-400 hover:underline underline-offset-2"
+            >
+              Learn more about me<IoArrowForward className="inline-flex" />
+            </a>
+          </p>
+        </section>
+        <section>
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {
+              posts.map(post => (
+                <li class="text-center mb-4">
+                  <a
+                    href={post.url}
+                    class="text-orange-500 dark:text-orange-400 xl:text-zinc-900 xl:dark:text-zinc-300 xl:hover:text-orange-400 xl:hover:dark:text-orange-400 relative transition-all duration-300 cursor-pointer filter 2xl:grayscale 2xl:hover:grayscale-0"
+                  >
+                    <Image
+                      class="border border-slate-400 dark:border-zinc-700 rounded-xl "
+                      src={post.frontmatter.heroImage}
+                      width={720 * 2}
+                      aspectRatio={2.0}
+                      alt="Thumbnail"
+                    />
+                    <div class="mt-3 text-xl">{post.frontmatter.title}</div>
+                  </a>
+                  <div class="opacity-70">{post.frontmatter.description}</div>
+                </li>
+              ))
+            }
+          </ul>
+        </section>
+        <CreatedWithSection />
+      </Content>
+    </main>
+    <Footer />
+  </Body>
+</html>

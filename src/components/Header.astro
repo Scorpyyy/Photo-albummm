@@ -1,0 +1,33 @@
+---
+import HeaderLink from './HeaderLink.astro'
+import { HOMEPAGE_URL } from '../config'
+import { IoLogoGithub } from 'react-icons/io5/index.js'
+import GhostIcon from './icons/ghost'
+import ThemeToggle from './ThemeToggleButton'
+---
+
+<header class="fixed w-full p-2 z-20 backdrop-blur-md">
+  <div class="mx-auto max-w-3xl">
+    <nav class="flex items-center gap-3 text-base">
+      <a href="/" class="group">
+        <h2
+          class="font-semibold tracking-tighter p-2 font-mplus text-lg group-hover:text-orange-500"
+        >
+          <GhostIcon />
+          Noppakorn Kaewsalabnil
+        </h2>
+      </a>
+      <div class="items-center gap-6 hidden md:flex">
+        <HeaderLink href={HOMEPAGE_URL}>About</HeaderLink>
+        <HeaderLink
+          href="https://github.com/PunGrumpy/PunGrumpy-Takes"
+          target="_blank"
+        >
+          <IoLogoGithub /> Source
+        </HeaderLink>
+      </div>
+      <div class="flex-1"></div>
+      <ThemeToggle client:visible />
+    </nav>
+  </div>
+</header>
