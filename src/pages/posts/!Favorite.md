@@ -8,6 +8,8 @@ tag:
 heroImage: /posts/favorite/favorite-cover.jpg
 ---
 
+!PLEASE WAIT FOR IMAGE TO LOAD!
+
 Hey, this album is so SHT and so RANDOM.<br>
 just a bunch of my favorite pic's of my self LMAO <br>
 I don't even know what to say about this lol<br>
