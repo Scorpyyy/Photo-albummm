@@ -2,7 +2,9 @@
 
 Built with Astro and Tailwind CSS
 
-https://arlxxjamss.web.app/
+its an auto deploy from vercel web. so don't mind the deployment history
+
+[Website -->](https://arlx-album.vercel.app/)
 
 ## Stack
 
