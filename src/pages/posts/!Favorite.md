@@ -46,7 +46,7 @@ it's just like taking a picture of myself is not my hobbies<br>
 
 <figure class="w-lg">
   <img class="max-w-full h-auto rounded-lg drop-shadow-2xl" src="/posts/favorite/3.jpg" alt="image description">
-  <figcaption class="mt-3 mb-8 text-base text-center opacity-70">2023, It's my self-pic from tagaytay </figcaption>
+  <figcaption class="mt-3 mb-8 text-base text-center opacity-70">2021, It's my self-pic from tagaytay long ago </figcaption>
 </figure>
 
 <figure class="w-lg text-3xl text-center bold font-mplus">
