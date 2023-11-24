@@ -287,11 +287,6 @@ it's just like taking a picture of myself is not my hobbies<br>
 </figure>
 
 <figure class="w-lg">
-  <img class="max-w-full h-auto rounded-lg drop-shadow-2xl" src="/posts/favorite/32.jpg" alt="image description">
-  <figcaption class="mt-3 mb-8 text-base text-center opacity-70">2021, jeep hussle</figcaption>
-</figure>
-
-<figure class="w-lg">
   <img class="max-w-full h-auto rounded-lg drop-shadow-2xl" src="/posts/favorite/33.jpg" alt="image description">
   <figcaption class="mt-3 mb-8 text-base text-center opacity-70">2022, it's a pic from my ex while we were testing some sunglass and yeah</figcaption>
 </figure>
