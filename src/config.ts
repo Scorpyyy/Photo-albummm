@@ -3,4 +3,4 @@
 
 export const SITE_TITLE = 'ARLX - ALBUM'
 export const SITE_DESCRIPTION = 'My Photo Album | Journal |.'
-export const HOMEPAGE_URL = 'https://arlxxjamss.web.app/'
+export const HOMEPAGE_URL = 'https://arlx-album.vercel.app/'
